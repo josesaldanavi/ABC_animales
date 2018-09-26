@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Testeo : MonoBehaviour {
     public Animator anim;
-    int runState;
+    /*int runState;
     public bool run;
 	// Use this for initialization
 	void Start () {
@@ -15,17 +15,22 @@ public class Testeo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Activar();
-	}
+	}*/
 
     public void Activar()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            anim.SetTrigger("Go");
-        }
+        /*if (Input.GetMouseButtonDown(0))
+        {*/
+            anim.SetTrigger("go");
+        /*}
         else
         {
             run=false;
-        }
+        }*/
     }
+    public void Sound()
+    {
+        GetComponent<AudioSource>().Play();
+    }
+
 }
